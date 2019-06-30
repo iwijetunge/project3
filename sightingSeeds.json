@@ -1,0 +1,17 @@
+[
+    {
+    "animalType" : "turkey",
+    "location" : {
+        "type": "Point", 
+        "coordinates": ["-93.35645", "44.90716"]
+    },
+    "datetime": "2016-05-18T16:00:00Z",
+    "status": "Active",
+    "dangerous": "false",
+    "isWild": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Gall-dindi.jpg/220px-Gall-dindi.jpg",
+    "comment": "The turkey looked mean",
+
+    "comments": []
+    }
+]
