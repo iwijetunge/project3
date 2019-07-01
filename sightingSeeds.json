@@ -1,0 +1,63 @@
+[
+    {
+    "animalType" : "turkey",
+    "location" : {
+        "type": "Point", 
+        "coordinates": ["-93.35645", "44.90716"]
+    },
+    "datetime": "2016-05-18T16:00:00Z",
+    "status": "Active",
+    "dangerous": "false",
+    "isWild": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Gall-dindi.jpg/220px-Gall-dindi.jpg",
+    "comment": "The turkey looked mean",
+
+    "comments": []
+    },
+    {
+        "animalType" : "turkey",
+        "location" : {
+            "type": "Point", 
+            "coordinates": ["-93.45645", "44.87716"]
+        },
+        "datetime": "2016-05-18T16:00:00Z",
+        "status": "Active",
+        "dangerous": "false",
+        "isWild": "true",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Meleagris_ocellata1.jpg/220px-Meleagris_ocellata1.jpg",
+        "comment": "The turkey was fancy",
+    
+        "comments": []
+    },
+    {
+        "animalType" : "dog",
+        "location" : {
+            "type": "Point", 
+            "coordinates": ["-93.47645", "44.77716"]
+        },
+        "datetime": "2016-05-18T16:00:00Z",
+        "status": "Active",
+        "dangerous": "false",
+        "isWild": "false",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Meleagris_ocellata1.jpg/220px-Meleagris_ocellata1.jpg",
+        "comment": "He had spots",
+    
+        "comments": []
+    },
+    {
+        "animalType" : "bear",
+        "location" : {
+            "type": "Point", 
+            "coordinates": ["-93.37645", "44.17716"]
+        },
+        "datetime": "2016-05-18T16:00:00Z",
+        "status": "Active",
+        "dangerous": "true",
+        "isWild": "true",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Meleagris_ocellata1.jpg/220px-Meleagris_ocellata1.jpg",
+        "comment": "He was digging through my garbage",
+    
+        "comments": []
+    }
+
+]
