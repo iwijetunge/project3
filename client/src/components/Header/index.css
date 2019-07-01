@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+#headerrow {
+    padding: 3px 4%;
+}
+
+#headercell1 {
+    width: 8%;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 3px 16px;
+}
+
+#headercell2 {
+    width: 73%;
+}
+
+#headercell2 h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0 10px;
+}
+
+#logo {
+    font-size: 2.7rem;
+    margin: 0 1px;
+}
+
+#headercell3 {
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+}
+
+.paw2 {
+    transform: rotate(54deg);
+}
+
+#headercell4 {
+    width: 12%;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+#headercell4 p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0;
+}
+
+#userspan {
+    margin-top: 15px;
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
