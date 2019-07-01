@@ -11,7 +11,11 @@ app.use(express.json());
 
 mongoose.connect("mongodb://localhost/animaltracks", { useNewUrlParser: true });
 mongoose.set('useCreateIndex', true);
+mongoose.connection.on('connected', function(){console.log("Mongoose Connected")});
 
+const seeds     = require('./sightingSeeds.json');
+
+seeds.map(sighting => db.Sighting.create(sighting));
 
 
 // Serve up static assets (usually on heroku)

@@ -33,7 +33,7 @@ const SightingSchema = new Schema({
 
   });
 
-const Sighting = mongoose.model("Character", SightingSchema);
+const Sighting = mongoose.model("Sighting", SightingSchema);
 
 // Export the User model
 module.exports = Sighting;
