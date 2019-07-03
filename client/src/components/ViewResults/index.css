@@ -11,11 +11,13 @@
     text-align: center;
 }
 
-.filterbox {
-    margin-left: 12px;
-    margin-right: 3px;
-}
-
 hr {
     border: 1px solid black;
+}
+.searchinput {
+    margin: 2px 2px 6px 2px;
+}
+.filterspan {
+    border-right: 1px solid grey;
+    margin-bottom: 18px;
 }
