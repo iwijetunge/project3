@@ -6,16 +6,16 @@ router.route('/sightings')
     .get((req,res,err) => {
         res.json(seeds);
     })
-
-router.route('/user/:id/sightings')
-    .get((req,res,err) => {
-        res.json(seeds);
-    })
     .post((req,res,err) => {
         res.json("post sighting");
     })
 
-router.route('/user/:id/sightings/:id')
+router.route('/users/:id/sightings')
+    .get((req,res,err) => {
+        res.json(seeds);
+    })
+
+router.route('/sightings/:id')
     .get((req,res,err) => {
         res.json(seeds[0]);
     })
@@ -39,7 +39,7 @@ router.route('/sightings/:id/comments')
         res.json("post");
     })
 
-router.route('/sightings/:id/comments/:id')
+router.route('/comments/:id')
     .get((req,res,err) => {
         res.json("comment");
     })
@@ -47,7 +47,7 @@ router.route('/sightings/:id/comments/:id')
         res.json("edit comment");
     })
 
-router.route('/user')
+router.route('/users')
     .get((req,res,err) => {
         res.json("get user");
     })
