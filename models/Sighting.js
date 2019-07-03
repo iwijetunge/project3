@@ -19,6 +19,7 @@ const SightingSchema = new Schema({
     datetime: Date,
     status: String,
     dangerous: Boolean,
+    isMissing: Boolean,
     isWild: Boolean,
     imageUrl: String,
     comment: String,
