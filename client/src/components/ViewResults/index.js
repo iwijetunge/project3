@@ -8,26 +8,26 @@ const ViewResults = props => (
   <div id="feeddiv"> 
   <div>
       <h2>Animal Postings In Your Area</h2>
-      <div class="w3-cell-row">
-      <h5 class="w3-cell w3-cell-middle w3-gray w3-mobile"><b>Filter<br/>by:</b></h5>
+      <div className="w3-cell-row">
+      <h5 className="w3-cell w3-cell-middle w3-gray w3-mobile"><b>Filter<br/>by:</b></h5>
 
-          <span class="w3-cell w3-cell-middle  w3-mobile filterspan">
+          <span className="w3-cell w3-cell-middle  w3-mobile filterspan">
                   <label for="danger1">Danger<br/>Alert</label>
-                  <br/><input type="checkbox" name="danger1" value="danger" class="inputC " />
+                  <br/><input type="checkbox" name="danger1" value="danger" className="inputC " />
           </span>
           
-          <span class="w3-cell w3-cell-middle  w3-mobile filterspan">
+          <span className="w3-cell w3-cell-middle  w3-mobile filterspan">
                   <label for="missing1">Missing<br/>Animal</label>
-                  <br/><input type="checkbox" name="missing1" value="missing" class="inputC" />
+                  <br/><input type="checkbox" name="missing1" value="missing" className="inputC" />
           </span>
           
-          <span class="w3-cell w3-cell-middle w3-mobile filterspan">
-              <h6><label for="wild1">Wild&nbsp;</label><input type="radio" id="wild1" value="false" name="domesticwild1" class="inputC" /></h6>
-              <h6><label for="domestic1">Domestic&nbsp;</label><input type="radio" id="domestic1" value="false" name="domesticwild1" class="inputC" /></h6>
+          <span className="w3-cell w3-cell-middle w3-mobile filterspan">
+              <h6><label for="wild1">Wild&nbsp;</label><input type="radio" id="wild1" value="false" name="domesticwild1" className="inputC" /></h6>
+              <h6><label for="domestic1">Domestic&nbsp;</label><input type="radio" id="domestic1" value="false" name="domesticwild1" className="inputC" /></h6>
           </span>
 
-          <span class="w3-cell w3-cell-middle w3-mobile filterspan">
-              <select class="inputC searchinput" title="Type of animal">
+          <span className="w3-cell w3-cell-middle w3-mobile filterspan">
+              <select className="inputC searchinput" title="Type of animal">
                   <option>Bear</option>
                   <option>Bobcat</option>
                   <option>Cat</option>
@@ -47,15 +47,15 @@ const ViewResults = props => (
                   <option>ALL OTHERS</option>
               </select>
               <br/>
-              <input placeholder="Location" name="location1" class="inputC searchinput" title="location" />
+              <input placeholder="Location" name="location1" className="inputC searchinput" title="location" />
 
           </span>
           
 
-          <span class="w3-cell w3-cell-middle w3-mobile filterspan">
-              from: <input type="date" name="date1" class="inputC searchinput" title="from this date..."/>
+          <span className="w3-cell w3-cell-middle w3-mobile filterspan">
+              from: <input type="date" name="date1" className="inputC searchinput" title="from this date..."/>
               <br/>
-              to: <input type="date" name="date2" class="inputC searchinput" title="...to this date"/>
+              to: <input type="date" name="date2" className="inputC searchinput" title="...to this date"/>
           </span>
 
       </div>
