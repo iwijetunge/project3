@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from "../../components/Header/";
 import NavShell from "../../components/NavShell/";
-import PostForm from "../../components/PostForm/";
+import LoginForm from "../../components/LoginForm/";
 import API from '../../util/API';
 
 
-export default class PostingPage extends React.Component {
+export default class LoginPage extends React.Component {
    
 
  //   componentDidMount () {
@@ -18,7 +18,7 @@ export default class PostingPage extends React.Component {
                 <Header>
                 </Header>
                 <NavShell>
-                    <PostForm></PostForm>
+                    <LoginForm></LoginForm>
                 </NavShell>
             </View>
         );

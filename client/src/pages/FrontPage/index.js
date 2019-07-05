@@ -3,9 +3,6 @@ import './index.css';
 
 
 export default class FrontPage extends React.Component {
-    state={
-        characters: []
-    }
 
 
     render () {
