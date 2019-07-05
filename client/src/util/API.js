@@ -1,12 +1,11 @@
 import axios from 'axios';
 
+axios.interceptors.request.use(function (config) {
+    const token = localStorage.getItem("token")
+    config.headers.Authorization =  "Bearer " + token;
 
-
-// axios.interceptors.request.use(function (config) {
-//     const token = localStorage.getItem("token");
-//     config.headers.Authorization = "Bearer " + token;
-//     return config;
-// });
+    return config;
+});
 
 export default {
     getAllSightings: () => axios.get('/api/sightings/')

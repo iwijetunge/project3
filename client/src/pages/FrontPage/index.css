@@ -1,0 +1,41 @@
+.band {
+    height: 115px;
+    margin: 0;
+}
+#footerband {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+#centerdiv { 
+    width: 50%;
+    margin: 0 auto;
+    padding: 4% 0;
+}
+#frontcell1 {
+    width: 20%;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+#frontcell2 h1 {
+    font-size: 4.2rem;
+    line-height: 4.3rem;
+}
+#logo {
+    font-size: 3rem;
+}
+.iconrow1 {
+    width: 12%;
+    font-size: 3.2rem;
+    color: rgb(1, 140, 187);
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 12px;
+    margin: 0 15px 3px 0px;
+}
+.iconrow1 p {
+    color: black;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    margin-top: 0;
+}
