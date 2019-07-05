@@ -11,6 +11,9 @@ router.route('/sightings')
     .get((req, res, err) => {
         res.json(seeds);
     })
+    .post((req,res,err) => {
+        res.json("post sighting");
+    })
 
 router.route('/user/:id/sightings')
     .get((req, res, err) => {
@@ -62,16 +65,26 @@ router.route('/sightings/:id/comments')
         res.json("post");
     })
 
+<<<<<<< HEAD
 router.route('/sightings/:id/comments/:id')
     .get((req, res, err) => {
+=======
+router.route('/comments/:id')
+    .get((req,res,err) => {
+>>>>>>> 0266dba302b9251e0061c38b6a8a89e8b99559d4
         res.json("comment");
     })
     .put((req, res, err) => {
         res.json("edit comment");
     })
 
+<<<<<<< HEAD
 router.route('/user')
     .get((req, res, err) => {
+=======
+router.route('/users')
+    .get((req,res,err) => {
+>>>>>>> 0266dba302b9251e0061c38b6a8a89e8b99559d4
         res.json("get user");
     })
     .post((req, res, err) => {

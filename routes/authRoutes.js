@@ -2,7 +2,7 @@ const router = require('express').Router();
 const db = require('../models'); //brings in our models
 require("dotenv").config();
 const SECRET_KEY = process.env.REACT_APP_SECRET_KEY;
-console.log(process.env.REACT_APP_SECRET_KEY)
+
 var jwt = require('jsonwebtoken');
 
 router.route('/login')

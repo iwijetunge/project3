@@ -9,13 +9,31 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
         
-          <div className="main">
-            <Route exact path="/login" component={LoginPage} />
-            <Route exact path="/signup" component={SignupPage} />
-          </div>
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
+        <BrowserRouter>
+        <div className="App-header">
+          <Route exact path="/feed" component={FeedPage} />
+          <Route exact path="/signup" component={SignupPage} />
+          <Route exact path="/login" component={LoginPage} />
+          <Route exact path="/front" component={FrontPage} />
+          <Route exact path="/posting" component={PostingPage} />
+          <Route exact path="/" component={({ match }) => <div>Editing {match.params.id}</div>}/>
+        </div>
         </BrowserRouter>
+      <CurrentLocation centerAroundCurrentLocation google={this.props.google}>
+        <Marker onClick={this.onMarkerClick} name={'Current Location'} />
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}
+          onClose={this.onClose}
+        >
+          <div>
+            <h4>{this.state.selectedPlace.name}</h4>
+          </div>
+          </InfoWindow>
+          </CurrentLocation>
       </div>
     );
   }
