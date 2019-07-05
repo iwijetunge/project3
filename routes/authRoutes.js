@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const db = require('../models'); //brings in our models
-const SECRET_KEY = 'd0GC4781rDu9';
+require("dotenv").config();
+const SECRET_KEY = process.env.SECRET_KEY;
 
 var jwt = require('jsonwebtoken');
-
 
 router.route('/login')
     .post( (req,res,err) => {

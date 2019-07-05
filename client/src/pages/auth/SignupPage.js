@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Col, Row, Input, Form, Button, Jumbotron} from 'reactstrap';
+import axios from 'axios';
 
 class SignupPage extends React.Component {
     state = {
@@ -24,18 +25,18 @@ class SignupPage extends React.Component {
         this.setState({[field]: event.target.value})
     }
     handleSubmit = () => {
-        //Need to fill this out
-        console.log("Valid input:", this.validateFormInfo(), " state: ", this.state)
+        axios.post('/auth/signup', this.state) 
     }
 
     render () {
         return (
             <Container>
                 <Row>
-                <Col md={4}></Col>
-                <Col md={4}>
+                <Col md={3}></Col>
+                <Col md={6}>
                     <Form>
                         <Jumbotron>
+                            <h3>Signup to start tracking!</h3>
                             <Input 
                                 value={this.state.username}
                                 placeholder="Enter Username"
@@ -56,10 +57,12 @@ class SignupPage extends React.Component {
                             <Button onClick={this.handleSubmit}>
                                 Sign Up!
                             </Button>
+                            <p>Already a tracker?</p>
+                            <a href="/login">Login here!</a>
                         </Jumbotron>
                     </Form>
                 </Col>
-                <Col md={4}></Col>
+                <Col md={3}></Col>
                 </Row>
             </Container>
         )

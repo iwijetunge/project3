@@ -5,7 +5,6 @@ import {Jumbotron} from 'reactstrap';
 import { BrowserRouter, Route } from "react-router-dom";
 import {SignupPage, LoginPage} from './pages/auth';
 
-
 // Routes for login and signup pages, will uncomment when figured out
 
 class App extends Component {
@@ -23,6 +22,7 @@ class App extends Component {
     );
   }
 }
+
 export default App;
 
 // export class MapContainer extends Component {

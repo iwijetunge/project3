@@ -24,7 +24,6 @@ class LoginPage extends React.Component {
     }
     handleSubmit = () => {
         axios.post('/auth/login', this.state) 
-            //.then(result => console.log("Result: ", result));
             .then( result => localStorage.setItem("token", result.data.token))
 
     }
@@ -33,10 +32,11 @@ class LoginPage extends React.Component {
         return (
             <Container>
                 <Row>
-                <Col md={4}></Col>
-                <Col md={4}>
+                <Col md={3}></Col>
+                <Col md={6}>
                     <Form>
                         <Jumbotron>
+                            <h3>Login to your account</h3>
                             <Input 
                                 value={this.state.username}
                                 placeholder="Enter Username"
@@ -52,10 +52,12 @@ class LoginPage extends React.Component {
                             <Button onClick={this.handleSubmit}>
                                 Log In!
                             </Button>
+                            <p>Don't have an account?</p>
+                            <a href="/Signup">Create an account here!</a>
                         </Jumbotron>
                     </Form>
                 </Col>
-                <Col md={4}></Col>
+                <Col md={3}></Col>
                 </Row>
             </Container>
         )

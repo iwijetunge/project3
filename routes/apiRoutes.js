@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const db = require('../models');
 const seeds = require('../sightingSeeds.json');
+require("dotenv").config();
 
-const SECRET_KEY = 'd0GC4781rDu9'; //don't forget to hide this
+const SECRET_KEY = process.env.SECRET_KEY; //don't forget to hide this
 const expressJwt = require('express-jwt');
 const jwtProtect = expressJwt({ secret: SECRET_KEY })
 
