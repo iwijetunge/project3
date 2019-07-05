@@ -3,7 +3,7 @@ const db = require('../models');
 const seeds = require('../sightingSeeds.json');
 require("dotenv").config();
 
-const SECRET_KEY = process.env.SECRET_KEY; //don't forget to hide this
+const SECRET_KEY = process.env.REACT_APP_SECRET_KEY; //don't forget to hide this
 const expressJwt = require('express-jwt');
 const jwtProtect = expressJwt({ secret: SECRET_KEY })
 
