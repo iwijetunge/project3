@@ -2,7 +2,7 @@ import React from "react";
 import './index.css';
 //import all components to go into shelldiv
 
-const Navshell = props => (
+const NavShell = props => (
 
     <div className="w3-blue" id="mainarea">
 
@@ -29,4 +29,4 @@ const Navshell = props => (
 
 );
 
-export default Navshell;
+export default NavShell;

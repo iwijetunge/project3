@@ -24,7 +24,8 @@ export default {
         .then(response => response.data),
     getUser: userId => axios.get('/api/users/', userId)
         .then(response => response.data),
-    search: 
+}
+    // search: 
     // getSightingComments: sightingId => axios.get('/api/sighting/'+ sightingId + '/comments')
     //     .then(response => response.data),
     // getComment: commentId => axios.get('/api/comments/'+ commentId)
@@ -33,5 +34,5 @@ export default {
     //     .then(response => response.data),
     // // createComment: sightingId => axios.post('/api/comments/'+ sightingId)
     // //     .then(response => response.data)             
-}
+// }
 
