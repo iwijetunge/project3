@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from "../../components/Header/";
-import NavShell from "../../components/NavShell/";
-import ResultsCard from "../../components/ResultsCard/";
-import ViewResults from "../../components/ViewResults/";
+import Header from "../../components/Header";
+import NavShell from "../../components/NavShell";
+import ResultsCard from "../../components/ResultsCard";
+import ViewResults from "../../components/ViewResults";
 import API from '../../util/API';
 
 
-export default class Feedpage extends React.Component {
+class FeedPage extends React.Component {
     // state={
     //     : []
     // }
@@ -17,7 +17,7 @@ export default class Feedpage extends React.Component {
 
     render () {
         return (
-            <View>
+            <div>
                 <Header>
                 </Header>
                 <NavShell>
@@ -25,7 +25,8 @@ export default class Feedpage extends React.Component {
                         <ResultsCard></ResultsCard>
                     </ViewResults>
                 </NavShell>
-            </View>
+            </div>
         );
     }
 };
+export default FeedPage
