@@ -19,19 +19,20 @@ export default {
         .then(response => response.data),
     deleteSighting: sightingId => axios.delete('/api/sightings/' + sightingId)
         .then(response => response.data),
-    getUserSightings: userId => axios.get('/api/users/' + userId)
+    getUserSightings: userId => axios.get('/api/users/' + userId + '/sightings')
         .then(response => response.data),
     createUser: user => axios.post('/api/users/', user)
         .then(response => response.data),
     getUser: userId => axios.get('/api/users/', userId)
         .then(response => response.data),
-    getSightingComments: sightingId => axios.get('/api/sighting/'+ sightingId + '/comments')
-        .then(response => response.data),
-    getComment: commentId => axios.get('/api/comments/'+ commentId)
-        .then(response => response.data),
-    editComment: commentId => axios.put('/api/comments/'+ commentId)
-        .then(response => response.data),
-    createComment: sightingId => axios.post('/api/comments/', sightingId)
-        .then(response => response.data)             
+    search: 
+    // getSightingComments: sightingId => axios.get('/api/sighting/'+ sightingId + '/comments')
+    //     .then(response => response.data),
+    // getComment: commentId => axios.get('/api/comments/'+ commentId)
+    //     .then(response => response.data),
+    // editComment: commentId => axios.put('/api/comments/'+ commentId)
+    //     .then(response => response.data),
+    // // createComment: sightingId => axios.post('/api/comments/'+ sightingId)
+    // //     .then(response => response.data)             
 }
 
