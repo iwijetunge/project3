@@ -7,9 +7,13 @@ import API from '../../util/API';
 
 
 class FeedPage extends React.Component {
-    // state={
-    //     : []
-    // }
+    state = {
+        sightings: []
+    }
+    fetchSightings = () => (
+        api.getAllSightings()
+        .then( characters => this.setState({sightings: sightings}))
+    )
 
     componentDidMount () {
         console.log("Reached Feedpage Mount");       
@@ -30,3 +34,9 @@ class FeedPage extends React.Component {
     }
 };
 export default FeedPage
+
+
+/* --where does this block belong?--
+this.state.sightings.map( (sighting, id) => (
+    <resultsCard sighting={sighting} key={id}/>
+)) */ 
