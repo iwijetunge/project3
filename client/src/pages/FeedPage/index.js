@@ -38,5 +38,5 @@ export default FeedPage
 
 /* --where does this block belong?--
 this.state.sightings.map( (sighting, id) => (
-    <resultsCard sighting={sighting} key={id}/>
+    <ResultsCard sighting={sighting} key={id}/>
 )) */ 
