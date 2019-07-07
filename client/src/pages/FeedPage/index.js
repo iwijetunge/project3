@@ -1,7 +1,9 @@
 import React from 'react';
-import {Col, Row, Container, Jumbotron} from 'reactstrap'
+import { Col, Row, Container, Jumbotron } from 'reactstrap'
 import API from '../../util/API';
 import ResultsCard from '../../components/ResultsCard';
+import Header from "../../components/Header";
+import NavShell from "../../components/NavShell";
 
 export default class FeedPage extends React.Component {
     state = {
@@ -11,32 +13,30 @@ export default class FeedPage extends React.Component {
     fetchSightings = () => (
         API.getAllSightings()
             // .then(sightings => console.log(sightings))
-            .then( sightings => this.setState({sightings: sightings}))
+            .then(sightings => this.setState({ sightings: sightings }))
     )
-    componentDidMount () {
+    componentDidMount() {
         this.fetchSightings();
     }
-    
-    render () {
+
+    render() {
         return (
-        <Container>
-            <Row>
-                <Col md={12}>
-                    <Jumbotron>
-                        <h1>Welcome to Animal Trax</h1>
-                    </Jumbotron>
-                </Col>
-            </Row>
-            <Row>
-                <Col md={12}>
-                    {
-                        this.state.sightings.map( (sighting, id) => (
-                            <ResultsCard sighting={sighting} key={id}/>
-                        ))
-                    }
-                </Col>
-            </Row>
-        </Container>
+            <div>
+                <Header>
+                </Header>
+                <NavShell></NavShell>
+                    <Container>
+                        <Row>
+                            <Col md={12}>
+                                {
+                                    this.state.sightings.map((sighting, id) => (
+                                        <ResultsCard sighting={sighting} key={id} />
+                                    ))
+                                }
+                            </Col>
+                        </Row>
+                    </Container>
+            </div>
         );
     }
 }
