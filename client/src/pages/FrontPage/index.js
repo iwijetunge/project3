@@ -9,13 +9,13 @@ export default class FrontPage extends React.Component {
         return (
 
             <div className="container" id="front">
-            <div className="w3-container w3-blue band"></div>
+            <div className="w3-container w3-stretch w3-blue band"></div>
                 <div className="w3-cell-row w3-center" id="centerdiv">
                         <div className="w3-cell w3-cell-middle" id="frontcell1">
-                                <i className="fas fa-paw" style="float:left;"></i><br />
-                                <i className="fas fa-paw" style="float:right;"></i><br />
-                                <i className="fas fa-paw" style="float:left;"></i><br />
-                                <i className="fas fa-paw" style="float:right;"></i><br />
+                                <i className="fas fa-paw" style={{float:"left"}}></i><br />
+                                <i className="fas fa-paw" style={{float:"right"}}></i><br />
+                                <i className="fas fa-paw" style={{float:"left"}}></i><br />
+                                <i className="fas fa-paw" style={{float:"right"}}></i><br />
                         </div>
                         <div className="w3-cell w3-cell-middle" id="frontcell2">
                             <h1>ani<i className="fas fa-binoculars" id="logo"></i>al tracks</h1>
