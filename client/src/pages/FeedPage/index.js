@@ -1,42 +1,42 @@
 import React from 'react';
-import Header from "../../components/Header";
-import NavShell from "../../components/NavShell";
-import ResultsCard from "../../components/ResultsCard";
-import ViewResults from "../../components/ViewResults";
+import {Col, Row, Container, Jumbotron} from 'reactstrap'
 import API from '../../util/API';
+import ResultsCard from '../../components/ResultsCard';
 
-
-class FeedPage extends React.Component {
+export default class FeedPage extends React.Component {
     state = {
         sightings: []
     }
+
     fetchSightings = () => (
-        api.getAllSightings()
-        .then( characters => this.setState({sightings: sightings}))
+        API.getAllSightings()
+            // .then(sightings => console.log(sightings))
+            .then( sightings => this.setState({sightings: sightings}))
     )
-
     componentDidMount () {
-        console.log("Reached Feedpage Mount");       
+        this.fetchSightings();
     }
-
+    
     render () {
         return (
-            <div>
-                <Header>
-                </Header>
-                <NavShell>
-                    <ViewResults>
-                        <ResultsCard></ResultsCard>
-                    </ViewResults>
-                </NavShell>
-            </div>
+        <Container>
+            <Row>
+                <Col md={12}>
+                    <Jumbotron>
+                        <h1>Welcome to Animal Trax</h1>
+                    </Jumbotron>
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    {
+                        this.state.sightings.map( (sighting, id) => (
+                            <ResultsCard sighting={sighting} key={id}/>
+                        ))
+                    }
+                </Col>
+            </Row>
+        </Container>
         );
     }
-};
-export default FeedPage
-
-
-/* --where does this block belong?--
-this.state.sightings.map( (sighting, id) => (
-    <ResultsCard sighting={sighting} key={id}/>
-)) */ 
+}

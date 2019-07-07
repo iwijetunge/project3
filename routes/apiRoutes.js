@@ -11,7 +11,7 @@ router.route('/sightings')
     .get((req,res,err) => {
         db.Sighting.find({})
         .sort({_id: -1})
-        .then(sightings => {console.log ("Got sightings: ", sightings); return sightings})
+        //.then(sightings => {console.log ("Got sightings: ", sightings); return sightings})
         .then(sightings => res.json(sightings))
         .catch(err => res.json(500, err))
     })
