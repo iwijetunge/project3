@@ -8,9 +8,9 @@ export default class FrontPage extends React.Component {
     render () {
         return (
 
-            <div className="container" id="front">
-            <div className="w3-container w3-stretch w3-blue band"></div>
-                <div className="w3-cell-row w3-center" id="centerdiv">
+            <div className="frontpgcontainer" id="front">
+                <div className="w3-container w3-blue band"></div>
+                <div className="w3-cell-row  w3-center" id="centerdiv">
                         <div className="w3-cell w3-cell-middle" id="frontcell1">
                                 <i className="fas fa-paw" style={{float:"left"}}></i><br />
                                 <i className="fas fa-paw" style={{float:"right"}}></i><br />
@@ -41,7 +41,6 @@ export default class FrontPage extends React.Component {
                             <p>Post New<br />Sighting</p>
                         </div>
                 </div>
-            
                 <div className="w3-container w3-blue band" id="footerband"></div>
             </div>
         );
