@@ -5,7 +5,8 @@ import { Input, Button, Form, FormGroup, Label, Col, Row, Container, Jumbotron }
 export default class PostForm extends React.Component {
     state = {
         animalType: "",
-        location: {},
+        lat: "",
+        long:"",
         Date: "",
         Time: "",
         comment: "",
@@ -20,14 +21,15 @@ export default class PostForm extends React.Component {
     clearForm = () => {
 
     }
-    
+
     submitSighting = () => {
         const newSighting = {
             animalType: this.state.animalType,
-            location: {"coordinates": [
-                30.00, 50.00],
+            location: {
+                "coordinates": 
+                   [this.state.lat, this.state.long],
                 "type": "Point"
-            },
+                },
             // location: this.state.location,
             Date: this.state.Date,
             Time: this.state.Time,
@@ -44,7 +46,7 @@ export default class PostForm extends React.Component {
                     <Jumbotron><h1>Create and Share Sightings</h1></Jumbotron>
                     <Row>
                         <Col md={6}>
-                        
+
                             <FormGroup>
                                 <Label>Animal Type</Label>
                                 <Input
@@ -54,21 +56,42 @@ export default class PostForm extends React.Component {
                                     value={this.state.animalType}
                                     onChange={this.handleInput("animalType")}
                                 >
-                                    
-                                    <option>Mammal</option>
-                                    <option>Bird</option>
-                                    <option>Reptile</option>
-                                    <option>Insect</option>
+                                    <option>Bear</option>
+                                    <option>Bobcat</option>
+                                    <option>Cat</option>
+                                    <option>Chicken</option>
+                                    <option>Coyote</option>
+                                    <option>Deer</option>
+                                    <option>Dog</option>
+                                    <option>Duck</option>
+                                    <option>Fox</option>
+                                    <option>Mountain Lion</option>
+                                    <option>Raccoon</option>
+                                    <option>Rat</option>
+                                    <option>Snake</option>
+                                    <option>Turkey</option>
+                                    <option>Turtle</option>
+                                    <option>Wolf</option>
+                                    <option>OTHER- explain in "other info"</option>
                                 </Input>
                             </FormGroup>
                             <FormGroup>
                                 <Label for="sightingLocation">Location</Label>
                                 <Input
                                     type="location"
-                                    name="location"
+                                    name="lat"
+                                    placeholder="Lat"
                                     // id="sightingLocation"
-                                    value={this.state.location}
-                                    onChange={this.handleInput("location")}
+                                    value= {this.state.lat}
+                                    onChange={this.handleInput("lat")}
+                                />
+                                                                <Input
+                                    type="location"
+                                    name="long"
+                                    placeholder="Long"
+                                    // id="sightingLocation"
+                                    value= {this.state.long}
+                                    onChange={this.handleInput("long")}
                                 />
                             </FormGroup>
                         </Col>
@@ -90,7 +113,7 @@ export default class PostForm extends React.Component {
                                     type="time"
                                     value={this.state.Time}
                                     onChange={this.handleInput("Time")}
-                                    // id="sightingTime"
+                                // id="sightingTime"
                                 />
                             </FormGroup>
                             <FormGroup>
@@ -114,7 +137,7 @@ export default class PostForm extends React.Component {
                                     onChange={this.handleInput("imageUrl")}
                                 />
                                 {/* <FormText color="muted"> */}
-                                    Add an image of the sighting
+                                Add an image of the sighting
                             {/* </FormText> */}
                             </FormGroup>
                         </Col>
@@ -147,23 +170,23 @@ export default class PostForm extends React.Component {
 //           <input type="radio" id="domestic" value="false" name="domesticwild" className="inputA" /><label for="domestic">&nbsp;Domestic</label>
 //           <br/>
 //           <select className="inputA boxinput" title="Type of animal">
-//             <option>Bear</option>
-//             <option>Bobcat</option>
-//             <option>Cat</option>
-//             <option>Chicken</option>
-//             <option>Coyote</option>
-//             <option>Deer</option>
-//             <option>Dog</option>
-//             <option>Duck</option>
-//             <option>Fox</option>
-//             <option>Mountain Lion</option>
-//             <option>Raccoon</option>
-//             <option>Rat</option>
-//             <option>Snake</option>
-//             <option>Turkey</option>
-//             <option>Turtle</option>
-//             <option>Wolf</option>
-//             <option>OTHER- explain in "other info"</option>
+            // <option>Bear</option>
+            // <option>Bobcat</option>
+            // <option>Cat</option>
+            // <option>Chicken</option>
+            // <option>Coyote</option>
+            // <option>Deer</option>
+            // <option>Dog</option>
+            // <option>Duck</option>
+            // <option>Fox</option>
+            // <option>Mountain Lion</option>
+            // <option>Raccoon</option>
+            // <option>Rat</option>
+            // <option>Snake</option>
+            // <option>Turkey</option>
+            // <option>Turtle</option>
+            // <option>Wolf</option>
+            // <option>OTHER- explain in "other info"</option>
 //           </select>
 //           <br/>
 //           <input placeholder="Location" name="location" className="inputA boxinput" title="Location of sighting or last known location of a missing pet" />
