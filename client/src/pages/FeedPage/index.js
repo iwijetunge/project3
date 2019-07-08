@@ -5,6 +5,7 @@ import ResultsCard from '../../components/ResultsCard';
 import Header from "../../components/Header";
 import NavShell from "../../components/NavShell";
 
+
 export default class FeedPage extends React.Component {
     state = {
         sightings: []
