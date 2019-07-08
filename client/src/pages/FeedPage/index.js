@@ -25,7 +25,8 @@ export default class FeedPage extends React.Component {
             <div>
                 <Header>
                 </Header>
-                <NavShell></NavShell>
+                <NavShell>
+                </NavShell>
                     <div>
                                 {
                                     this.state.sightings.map((sighting, id) => (
