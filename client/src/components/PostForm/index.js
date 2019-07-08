@@ -7,6 +7,8 @@ export default class PostForm extends React.Component {
         animalType: "",
         lat: "",
         long:"",
+        isWild: false,
+        isDangerous:false,
         Date: "",
         Time: "",
         comment: "",
@@ -18,6 +20,15 @@ export default class PostForm extends React.Component {
             [field]: value
         })
     }
+    // handleCheckbox(event) {
+    //     const target = event.target;
+    //     const value = target.type === 'checkbox' ? target.checked : target.value;
+    //     const name = target.name;
+    
+    //     this.setState({
+    //       [name]: value
+    //     });
+    //   }
     clearForm = () => {
 
     }
@@ -31,6 +42,8 @@ export default class PostForm extends React.Component {
                 "type": "Point"
                 },
             // location: this.state.location,
+            isWild: this.state.isWild,
+            dangerous: this.state.isDangerous,
             Date: this.state.Date,
             Time: this.state.Time,
             comment: this.state.comments,
@@ -93,6 +106,32 @@ export default class PostForm extends React.Component {
                                     value= {this.state.long}
                                     onChange={this.handleInput("long")}
                                 />
+                            </FormGroup>
+                            <FormGroup>
+                                <label>
+                                    <h4>
+                                    Is Wild:
+                                    </h4>
+                                <input
+                                        name="isWild"
+                                        type="checkbox"
+                                        value={true}
+                                        // checked={this.state.isWild}
+                                        onChange={this.handleInput("isWild")} />
+                                </label>
+                            </FormGroup>
+                            <FormGroup>
+                                <label>
+                                    <h4>
+                                    Is Dangerous:
+                                    </h4>
+                                <input
+                                        name="isDangerous"
+                                        type="checkbox"
+                                        value={true}
+                                        // checked={this.state.isDangerous}
+                                        onChange={this.handleInput("isDangerous")} />
+                                </label>
                             </FormGroup>
                         </Col>
                         <Col md={6}>
