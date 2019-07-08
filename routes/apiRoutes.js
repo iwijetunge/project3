@@ -48,7 +48,7 @@ router.route('/sightings')
             // .then(() => db.User.findOne({_id: userId}))
             // .then(dbUser => dbUser.update({$push:{sightings: createdSighting._id}}))
             .then(result => res.json(createdSighting))
-            .catch(err => res.json(500, error))
+            .catch(err => res.json(500, err))
     });
 
 
