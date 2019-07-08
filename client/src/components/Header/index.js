@@ -12,7 +12,7 @@ const Header = props => (
         </div>
 
         <div className="w3-cell w3-cell-middle" id="headercell2">
-            <h1>ani<i className="fas fa-binoculars" id="logo"></i>al tracks</h1>
+          <a href="./front"><h1>ani<i className="fas fa-binoculars" id="logo"></i>al tracks</h1></a>
         </div>
 
         <div className="w3-cell w3-cell-middle" id="headercell3">
@@ -23,10 +23,10 @@ const Header = props => (
         </div>
 
         <div className="w3-cell w3-cell-middle" id="headercell4">
-            <span className="w3-btn w3-ripple" id="userspan">
+            <a href="./login"><span className="w3-btn w3-ripple" id="userspan">
                 <i className="fas fa-user-circle"></i>
                 <p>User</p>
-            </span>
+            </span></a>
         </div>
 
     </header>

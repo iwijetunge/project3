@@ -26,17 +26,13 @@ export default class FeedPage extends React.Component {
                 <Header>
                 </Header>
                 <NavShell></NavShell>
-                    <Container>
-                        <Row>
-                            <Col md={12}>
+                    <div>
                                 {
                                     this.state.sightings.map((sighting, id) => (
                                         <ResultsCard sighting={sighting} key={id} />
                                     ))
                                 }
-                            </Col>
-                        </Row>
-                    </Container>
+                    </div>
             </div>
         );
     }
