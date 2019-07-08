@@ -13,16 +13,16 @@ const MyMapComponent = compose(
     googleMapURL:
       "https://maps.googleapis.com/maps/api/js?key=AIzaSyARHY5YXsaUpv_QuPJUxNYFYzW7A4JBMDE&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: "100%" }} />,
-    containerElement: <div style={{ height: "400px" }} />,
+    containerElement: <div style={{ height: "200px", width:"200px" }} />,
     mapElement: <div style={{ height: "100%" }} />
   }),
   withScriptjs,
   withGoogleMap
 )(props => (
-  <GoogleMap defaultZoom={12} defaultCenter={{ lat: -34.397, lng: 150.644 }}>
+  <GoogleMap defaultZoom={12} defaultCenter={{ lat: props.lat, lng: props.lng }}>
     {props.isMarkerShown && (
       <Marker
-        position={{ lat: -34.397, lng: 150.644 }}
+        position={{ lat: props.lat, lng: props.lng }}
         onClick={props.onMarkerClick}
         icon={'paws.png'}
       />
@@ -33,7 +33,7 @@ const MyMapComponent = compose(
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { title: "React & GoogleMap Test" };
+    this.state = { title: "ReactGoogleMap" };
   }
 
   render() {
@@ -49,5 +49,5 @@ class MyComponent extends React.Component {
   }
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<MyComponent />, rootElement);
+export default MyMapComponent
+
