@@ -5,8 +5,9 @@ import {Jumbotron} from 'reactstrap';
 import { BrowserRouter, Route } from "react-router-dom";
 import {SignupPage, LoginPage} from './pages/auth';
 import FeedPage from './pages/FeedPage';
-import PostingPage from './pages/PostingPage';
+// import PostingPage from './pages/PostingPage';
 import FrontPage from './pages/FrontPage';
+import PostForm from './components/PostForm';
 
 class App extends Component {
   render() {
@@ -19,7 +20,8 @@ class App extends Component {
           <Route exact path="/signup" component={SignupPage} />
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/front" component={FrontPage} />
-          <Route exact path="/posting" component={PostingPage} />
+          {/* <Route exact path="/posting" component={PostingPage} /> */}
+          <Route exact path="/posting" component={() => <PostForm new={true}/>} />
           <Route exact path="/" component={({ match }) => <div>Editing {match.params.id}</div>}/>
         </div>
         </BrowserRouter>
