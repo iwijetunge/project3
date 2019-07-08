@@ -1,4 +1,5 @@
 import React from 'react'
+import MyMapComponent from '../Maps/Map'
 
 const ResultsCard = props => (
 
@@ -35,8 +36,14 @@ const ResultsCard = props => (
                         <p className="w3-bar-item parag">{props.sighting.comment}</p>
                     <div className="w3-bar-item pics">
                         <img src={props.sighting.imageUrl} alt="animal picture" class="w3-card pic" />
-                        <img src="pointer.jpg" alt="map pointer" class="w3-card point" />
                     </div>
+                </div>
+                <div>
+                <MyMapComponent
+          isMarkerShown={true}
+          lat={props.sighting.location.coordinates[1]} lng={props.sighting.location.coordinates[0]}
+          //onMarkerClick={this.handleMarkerClick}
+        />
                 </div>
 
     </div>
