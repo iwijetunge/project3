@@ -46,4 +46,4 @@ const ResultsCard = props => (
 
     export default ResultsCard;
 
-);
+

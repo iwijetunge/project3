@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import NavShell from "../../components/NavShell";
 import ResultsCard from "../../components/ResultsCard";
 import ViewResults from "../../components/ViewResults";
-import API from '../../util/API';
+import api from '../../util/API';
 
 
 class FeedPage extends React.Component {
