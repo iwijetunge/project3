@@ -8,16 +8,16 @@ const NavShell = props => (
 
         <div className="w3-bar w3-blue" id="iconbar">
             <div className="w3-bar-item w3-right w3-button w3-ripple iconrow">
-                <i className="fas fa-exclamation-circle"></i>
-                <p>Post Lost<br />Animal</p>
+                <a href="./posting"><i className="fas fa-exclamation-circle"></i>
+                <p>Post Lost<br />Animal</p></a>
             </div>
             <div className="w3-bar-item w3-right w3-button w3-ripple iconrow">
-                <i className="far fa-eye"></i>
-                <p>Post New<br />Sighting</p>
+                <a href="./posting"><i className="far fa-eye"></i>
+                <p>Post New<br />Sighting</p></a>
             </div>
             <div className="w3-bar-item w3-right w3-button w3-ripple iconrow">
-                <i className="fas fa-binoculars"></i>
-                <p>Sightings<br />Feed</p>
+                <a href="./feed"><i className="fas fa-binoculars"></i>
+                <p>Sightings<br />Feed</p></a>
             </div>
         </div>
 
