@@ -1,26 +1,24 @@
 #front {
-    margin-left: 0;
-    margin-right: 0;
     width: 100%;
+    height: 100vh;
 }
-
 .band {
-    height: 115px;
-    width: 100%;
-    margin: 0;
-}
-#footerband {
-    bottom: 0;
+    height: 18vh;
 }
 #centerdiv { 
-    width: 50%;
+    width: 53%;
+    height: 44vh;
     margin: 0 auto;
     padding: 4% 0;
 }
 #frontcell1 {
-    width: 20%;
+    width: 21%;
+    padding-left: 4%;
     font-size: 3rem;
     line-height: 3rem;
+}
+#frontcell2 {
+    padding-left: 2%;
 }
 #frontcell2 h1 {
     font-size: 4.2rem;
@@ -28,6 +26,9 @@
 }
 #logo {
     font-size: 3rem;
+}
+#frontpageicons {
+    height: 20vh;
 }
 .iconrow1 {
     width: 12%;
