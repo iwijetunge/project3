@@ -22,7 +22,7 @@ class App extends Component {
           <Route exact path="/front" component={FrontPage} />
           <Route exact path="/posting" component={PostingPage} />
 { /*          <Route exact path="/posting" component={() => <PostForm new={true}/>} /> */ }
-          <Route exact path="/" component={({ match }) => <div>Editing {match.params.id}</div>}/>
+          <Route exact path="/" component={FrontPage} />
         </div>
         </BrowserRouter>
       {/* <CurrentLocation centerAroundCurrentLocation google={this.props.google}>
