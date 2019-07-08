@@ -53,7 +53,7 @@ class LoginPage extends React.Component {
                                 Log In!
                             </Button>
                             <p>Don't have an account?</p>
-                            <a href="/Signup">Create an account here!</a>
+                            <a href="/signup">Create an account here!</a>
                         </Jumbotron>
                     </Form>
                 </Col>

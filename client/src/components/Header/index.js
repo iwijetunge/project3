@@ -24,8 +24,8 @@ const Header = props => (
 
         <div className="w3-cell w3-cell-middle" id="headercell4">
             <span className="w3-btn w3-ripple" id="userspan">
-                <i className="fas fa-user-circle"></i>
-                <p>User</p>
+                <a href="./login"><i className="fas fa-user-circle"></i>
+                <p>User</p></a>
             </span>
         </div>
 
