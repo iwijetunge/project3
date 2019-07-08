@@ -130,14 +130,14 @@ export default class PostForm extends React.Component {
                             <FormGroup>
                                 <Label for="sightingImg">Image</Label>
                                 <Input
-                                    type="file"
-                                    name="file"
+                                    type="text"
+                                    name="image"
                                     id="imageUrl"
                                     value={this.state.imageUrl}
                                     onChange={this.handleInput("imageUrl")}
                                 />
                                 {/* <FormText color="muted"> */}
-                                Add an image of the sighting
+                                Add a link to the image of the sighting
                             {/* </FormText> */}
                             </FormGroup>
                         </Col>
