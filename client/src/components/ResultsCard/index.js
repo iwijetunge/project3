@@ -12,6 +12,8 @@ const ResultsCard = props => (
         <p>{props.sighting.imageUrl}</p>
         <p>{props.sighting.comment}</p>
     </div>
+
 );
 
 export default ResultsCard;
+
