@@ -1,10 +1,15 @@
+#front {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
 .band {
     height: 115px;
+    width: 100%;
     margin: 0;
 }
 #footerband {
-    width: 100%;
-    position: fixed;
     bottom: 0;
 }
 #centerdiv { 
