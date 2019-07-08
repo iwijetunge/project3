@@ -15,11 +15,11 @@ export default class PostingPage extends React.Component {
     render () {
         return (
             <div>
-                <Header>
+                {/* <Header>
                 </Header>
-                <NavShell>
-                    <PostForm></PostForm>
-                </NavShell>
+                <NavShell> */}
+                    <PostForm />
+                    {/* </NavShell> */}
             </div>
         );
     }
