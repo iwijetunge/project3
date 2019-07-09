@@ -15,7 +15,8 @@ router.route('/sightings')
         .then(sightings => res.json(sightings))
         .catch(err => res.json(500, err))
     })
-    .post((req,res,err) => {
+    .post(jwtProtect, (req, res, err) => {
+  
 
         //format for post request
 
