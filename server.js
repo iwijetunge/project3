@@ -9,7 +9,10 @@ const db = require("./models");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost/animaltracks", { useNewUrlParser: true });
+//mongoose.connect("mongodb://localhost/animaltracks", { useNewUrlParser: true });
+
+mongoose.connect("mongodb://iwijetunge:nagano1s@ds019829.mlab.com:19829/heroku_qmgsg6qc", { useNewUrlParser: true });
+
 mongoose.set('useCreateIndex', true);
 mongoose.connection.on('connected', function(){console.log("Mongoose Connected")});
 
