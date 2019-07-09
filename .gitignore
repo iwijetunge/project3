@@ -57,6 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# hidden api key for google maps
+client/src/Maps/apikey.json
+
 # next.js build output
 .next
 

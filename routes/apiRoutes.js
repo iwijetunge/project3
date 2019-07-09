@@ -2,8 +2,8 @@ const router = require('express').Router();
 const db = require('../models');
 const seeds = require('../sightingSeeds.json');
 require("dotenv").config();
-
 const SECRET_KEY = process.env.REACT_APP_SECRET_KEY; //don't forget to hide this
+const GOOGLEMAPS_API_KEY = process.env.GOOGLEMAPS_API_KEY;
 const expressJwt = require('express-jwt');
 const jwtProtect = expressJwt({ secret: SECRET_KEY })
 
@@ -18,7 +18,7 @@ router.route('/sightings')
     .post((req,res,err) => {
 
         //format for post request
-
+e
         // "location": {
         //     "coordinates": [
         //         -93.37645,

@@ -7,11 +7,14 @@ import {
   GoogleMap,
   Marker
 } from "react-google-maps";
+const apikey = require('./apikey.json');
+const map_key = apikey.GOOGLEMAPS_API_KEY;
+console.log(map_key);
 
 const MyMapComponent = compose(
   withProps({
     googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyARHY5YXsaUpv_QuPJUxNYFYzW7A4JBMDE&v=3.exp&libraries=geometry,drawing,places",
+      "https://maps.googleapis.com/maps/api/js?key=" + map_key + "&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: "100%" }} />,
     containerElement: <div style={{ height: "200px", width:"200px" }} />,
     mapElement: <div style={{ height: "100%" }} />
@@ -29,6 +32,8 @@ const MyMapComponent = compose(
     )}
   </GoogleMap>
 ));
+
+
 
 class MyComponent extends React.Component {
   constructor(props) {
@@ -48,6 +53,8 @@ class MyComponent extends React.Component {
     );
   }
 }
+
+
 
 export default MyMapComponent
 
