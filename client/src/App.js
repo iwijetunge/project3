@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import { GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 // import CurrentLocation from './Map';
-import {Jumbotron} from 'reactstrap';
 import { BrowserRouter, Route } from "react-router-dom";
 import {SignupPage, LoginPage} from './pages/auth';
 import FeedPage from './pages/FeedPage';

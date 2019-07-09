@@ -33,21 +33,17 @@ const ResultsCard = props => (
                 </div>
 
                 <div className="w3-bar detailrow">
-                        <p className="w3-bar-item parag">{props.sighting.comment}</p>
+                    <p className="w3-bar-item parag">{props.sighting.comment}</p>
                     <div className="w3-bar-item pics">
-                        <img src={props.sighting.imageUrl} alt="animal picture" class="w3-card pic" />
+                        <img src={props.sighting.imageUrl} alt="animal picture" className="w3-card pic" />
+                        <MyMapComponent isMarkerShown={true}
+                            lat={props.sighting.location.coordinates[1]} 
+                            lng={props.sighting.location.coordinates[0]}
+                            //onMarkerClick={this.handleMarkerClick}
+                        />
                     </div>
                 </div>
-                <div>
-                <MyMapComponent
-          isMarkerShown={true}
-          lat={props.sighting.location.coordinates[1]} lng={props.sighting.location.coordinates[0]}
-          //onMarkerClick={this.handleMarkerClick}
-        />
-                </div>
-
     </div>
-
 );
 
 export default ResultsCard;

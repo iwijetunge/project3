@@ -16,13 +16,12 @@ export default class PostingPage extends React.Component {
         return (
             <div>
               <Header>
-                </Header>
-                <NavShell>
+              </Header>
+              <NavShell>
               </NavShell>
               <PostForm> 
               </PostForm>
-                
-                </div>
+            </div>
         );
     }
 };

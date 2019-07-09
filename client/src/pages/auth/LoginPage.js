@@ -34,28 +34,22 @@ class LoginPage extends React.Component {
                 <Row>
                 <Col md={3}></Col>
                 <Col md={6}>
-                    <Form>
-                        <Jumbotron>
-                            <h3>Login to your account</h3>
-                            <Input 
-                                value={this.state.username}
-                                placeholder="Enter Username"
-                                onChange={this.handleInput("username")}
+                <br/>
 
-                            />
-                            <Input 
-                                value={this.state.password}
-                                placeholder="Enter Password"
-                                onChange={this.handleInput("password")}
-
-                            />
-                            <Button onClick={this.handleSubmit}>
-                                Log In!
-                            </Button>
-                            <p>Don't have an account?</p>
-                            <a href="/Signup">Create an account here!</a>
+                        <Jumbotron className="w3-blue">
+                          <Form>
+                            <h3><i className="fas fa-paw paw2"></i>&nbsp;Animal Tracks: Log-in</h3><br/>
+                            <Input value={this.state.username} placeholder="Enter Username" 
+                                onChange={this.handleInput("username")} />
+                            <br/>
+                            <Input value={this.state.password} placeholder="Enter Password"
+                                onChange={this.handleInput("password")} />
+                            <br/>
+                            <Button onClick={this.handleSubmit}> Log In! </Button>
+                            <br/><br/>
+                            <p>Don't have an account? <a href="/Signup">Create an account here!</a></p>
+                          </Form>
                         </Jumbotron>
-                    </Form>
                 </Col>
                 <Col md={3}></Col>
                 </Row>

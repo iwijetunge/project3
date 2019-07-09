@@ -5,7 +5,7 @@
     margin-bottom: 40px;
     margin-right: auto;
     padding: 3px 9px 6px 9px;
-    border: 1px solid grey;
+    border: 2px solid rgb(120, 186, 248);
     border-radius: 18px;
     background-color: white;
     color: black;
@@ -17,21 +17,21 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0px;
 }
 .inputA {
     margin-bottom: 12px;
 }
-.boxinput {
-    width: 95%;
-}
 #postform1,
 #postform3 {
-    width: 28%;
+    width: 29%;
     min-width: 300px;
+    padding-left: 20px;
 }
 #postform2 {
     width: 40%;
     min-width: 300px;
+    padding-left: 0;
+    margin-left: 0;
 }
