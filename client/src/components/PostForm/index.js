@@ -2,6 +2,8 @@ import React from 'react'
 import API from '../../util/API';
 import './index.css';
 import { Input, Button, Form, FormGroup, Label, Col, Row, Container, Jumbotron } from 'reactstrap'
+
+
 export default class PostForm extends React.Component {
     state = {
         animalType: "",
@@ -54,9 +56,9 @@ export default class PostForm extends React.Component {
     }
     render() {
         return (
-            this.props.new ?
                 <Container>
-                    <Jumbotron><h1>Create and Share Sightings</h1></Jumbotron>
+                    <h1>Post Sightings</h1>
+                    <br/>
                     <Row>
                         <Col md={6}>
 
@@ -189,7 +191,6 @@ export default class PostForm extends React.Component {
                         </Col>
                     </Row>
                 </Container>
-                : null
         )
     }
 } 
