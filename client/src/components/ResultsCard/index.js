@@ -1,5 +1,6 @@
 import React from 'react'
 import MyMapComponent from '../Maps/Map'
+import '.index.css';
 
 const ResultsCard = props => (
 
