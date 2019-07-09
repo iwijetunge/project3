@@ -1,29 +1,55 @@
-# Create React Express App
+2019 Spring Cohert of the University of Minnesota Programming Bootcamp: Project 2
 
-## About This Boilerplate
+Team Defenders:
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+Brian Lynn - Back end / react-google-maps
+Ivan We - Project Manager
+Simon - Back end
+Christopher Cannady - Front end
+Mike - Back End
+Laura - Front End
+App Utility:
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+This app can:
+help neighbors locate lost animals
+notify others of potentially dangerous situations 
+keep a record of locations of wildlife issues
+keep data that can help animal control authorities
 
-## Starting the app locally
+How it works:
+users can submit an animal sighting, and include information such as type of animal, location, and other relevant details
+posts are displayed on a news-feed style interface
+data is stored in a database
+users can look up previous posts along various parameters
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+Project 3: Requirements
+Must use React, Vue, or Angular in some way (even if minimal)
 
-```
-npm install
-```
+Must use a Node and Express Web Server
 
-This should install node modules within the server and the client folder.
+Must be backed by a MySQL or MongoDB Database with a Sequelize or Mongoose ORM
 
-After both installations complete, run the following command in your terminal:
+Must have both GET and POST routes for retrieving and adding new data
 
-```
-npm start
-```
+Must be deployed using Heroku (with Data)
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+Must utilize at least two libraries, packages, or technologies that we haven’t discussed
 
-## Deployment (Heroku)
+Must have a polished frontend / UI
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+Must have folder structure that meets MVC Paradigm
+
+Must meet good quality coding standards (indentation, scoping, naming)
+
+Must not expose sensitive API key information on the server, see Protecting-API-Keys-In-Node.md
+Optional tools
+
+Deployed Heroku Application
+Deployed Heroku Link: https://github.com/iwijetunge/project3
+
+Note: No special credentials needed to test site. To run application register, login, and create/delete horses.
+
+Unique code to highlight
+As part of our original project goal we hoped to generate a race between horses. The horses chances of winning is based on the horses' statistics. In our project folder there is a 'racing' folder with the start of that code.
+
+Gif example of racing horses based on given values (basis of future work): Gif example future-work example game goal.
