@@ -14,7 +14,7 @@ export default class PostForm extends React.Component {
         Date: "",
         Time: "",
         comment: "",
-        imageUrl: "",
+        Image: "",
     }
     handleInput = field => event => {
         const { value } = event.target;
@@ -174,8 +174,8 @@ export default class PostForm extends React.Component {
                                     type="text"
                                     name="image"
                                     id="imageUrl"
-                                    value={this.state.imageUrl}
-                                    onChange={this.handleInput("imageUrl")}
+                                    value={this.state.Image}
+                                    onChange={this.handleInput("Image")}
                                 />
                                 {/* <FormText color="muted"> */}
                                 Add a link to the image of the sighting
